@@ -1,11 +1,13 @@
 require_relative 'config/environment'
 
-# binding.pry
+#  binding.pry
 
 app = Cli.new
 
-app.welcome
-app.ask_users_name
-app.display_trails
+# app.welcome
+# app.ask_users_name
+app.start
+app.ask_difficulty
+# app.display_trails
 
 
