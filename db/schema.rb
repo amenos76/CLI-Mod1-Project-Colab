@@ -10,13 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_10_225432) do
+ActiveRecord::Schema.define(version: 2020_11_10_235837) do
 
   create_table "trails", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.text "description"
     t.string "difficulty"
+    t.boolean "has_water"
+    t.boolean "pets_allowed"
+    t.boolean "has_bathrooms"
+    t.boolean "has_shade"
+    t.boolean "has_parking_fee"
+    t.float "length_distance"
+    t.float "length_time"
   end
 
   create_table "users", force: :cascade do |t|
@@ -24,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_225432) do
     t.string "last_name"
     t.string "username"
     t.string "email"
+    t.string "location"
   end
 
 end

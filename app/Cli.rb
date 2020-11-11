@@ -68,7 +68,7 @@ class Cli
     end
 
     def ask_difficulty
-        @difficulty_choice = prompt.select("Choose your difficulty", %w(Easy Medium Hard))
+        @difficulty_choice = prompt.select("Choose your desired hike difficulty", %w(Easy Medium Hard))
         thing = Trail.find_by(difficulty: @difficulty_choice)
         puts "Here are some trails that match your difficulty: #{thing.name}"
     end
