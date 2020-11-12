@@ -1,13 +1,26 @@
 require_relative 'config/environment'
 
-# binding.pry
+binding.pry
 
 app = Cli.new
 
-# app.welcome
-# app.ask_users_name
+
 app.start
-app.ask_difficulty
-# app.display_trails
+app.main_menu
+# app.ask_difficulty
+# app.ask_location
+# app.ask_dog
+# app.ask_water
+# app.perfect_trail
+
+
+
+
+
+
+
+
+
+#app.display_trail_names
 
 
